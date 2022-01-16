@@ -1,23 +1,31 @@
-.section-one-main {
-    height: 200vh;
- 
-  
-}
+
 
 .box {
-    height: 200px;
-    width: 400px;
-    border-radius: 8%;
-    border: 10px solid #565C66;
-    justify-self: center;
-    align-self: center;
-    z-index: 1000;
-    padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+
+  color: #FFF;
+  text-align: center;
+  font-family: 'lato',sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+
+  margin-top: -60px;
+  padding-left: 10px;
+
 }
 
-
+.textarea{
+  background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 .section-two-main {
     height: 100vh;
+    /*background-color: #141414 */
 }

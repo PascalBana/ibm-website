@@ -1,4 +1,5 @@
 runtime: ruby27
 env: standard
 entrypoint: bundle exec rails server -e production -p $PORT
-manual_scaling:   instances: 1
+manual_scaling:
+   instances: 1

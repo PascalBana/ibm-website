@@ -1,5 +1,9 @@
 steps:
+- name: 'bash'
+  args: ['echo', 'Hello world!']
+  options:
+   logging: CLOUD_LOGGING_ONLY
+
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
   timeout: "1600s"
-  logging: CLOUD_LOGGING_ONLY

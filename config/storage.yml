@@ -16,9 +16,9 @@ local:
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
-#  service: GCS
-#  project: ibmining
-#  credentials: <%= Rails.root.join("../../../Documents/ibmining-764ea4793d39.json") %>
+#   service: GCS
+#   project: ibmining
+#   credentials: <%= Rails.root.join("../../../Documents/ibmining-764ea4793d39.json") %>
 #   bucket: 
 
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)

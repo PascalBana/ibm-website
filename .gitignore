@@ -40,4 +40,4 @@ yarn-debug.log*
 .yarn-integrity
 
 # Ignore Node Module.
-/node_modules
+# /node_modules

@@ -2,7 +2,7 @@ steps:
 - name: 'bash'
   args: ['echo', 'Hello world!']
 - name: 'bash'
-args: ['RAILS_ENV=production', 'rails', 'assets:precompile']
+  args: ['RAILS_ENV=production', 'rails', 'assets:precompile']
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
   timeout: "1600s"

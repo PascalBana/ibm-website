@@ -1,3 +1,4 @@
 runtime: ruby
 env: flex
 entrypoint: bundle exec rails server -e production -p $PORT
+timeout: "1600s"

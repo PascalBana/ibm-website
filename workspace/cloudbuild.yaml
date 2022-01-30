@@ -1,7 +1,7 @@
 steps:
 - name: "gcr.io/cloud-builders/gcloud"
+  timeout: "1200s"
   args: ["app", "deploy"]
-  timeout: "1600s"
 options:
   logging: CLOUD_LOGGING_ONLY
   env: ['RAILS_MASTER_KEY=$_RAILS_MASTER_KEY']

@@ -1,31 +1,23 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #16131Eff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.logo{
+  color: #F5F4E9;
+  font-size: 4.5rem;
+}
 
-.box {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-
-  color: #FFF;
-  text-align: center;
-  font-family: 'lato',sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-
-  margin-top: -60px;
-  padding-left: 10px;
+main {
 
 }
 
-.textarea{
-  background: -webkit-linear-gradient(white, #ff0000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-.section-two-main {
-    height: 100vh;
-    /*background-color: #141414 */
+.hero {
+  height: 100vh;
+  background: radial-gradient(ellipse at top, #1B2735 0%, #000 100%);
 }

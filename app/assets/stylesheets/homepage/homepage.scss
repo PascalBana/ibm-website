@@ -4,11 +4,11 @@ header {
   width: 100%;
   top: 0;
   background-color: #16131Ef0;
+  font-family: 'Bebas Neue', verdana, sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Bebas Neue', verdana, sans-serif;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -31,7 +31,7 @@ header > div {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  gap: 3em;
+  gap: 0.5em;
 }
 
 .list-items {
@@ -44,14 +44,49 @@ header > div {
   }
 }
 
+.list-links {
+  padding: 1rem;
+}
+
+.last-list-link {
+  padding-right: 0.25rem;
+}
+
 ////////////////////////////////////////////////////
 //                 Main Section                   //
 ////////////////////////////////////////////////////
 main {
-
+  font-family: 'Bebas Neue', verdana, sans-serif;
 }
 
 .hero {
   height: 100vh;
   background: radial-gradient(ellipse at top, #1B2735 0%, #000 100%);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.hero-title {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 4.5rem;
+  width: 55vw;
+  margin-top: 13vh;
+  margin-left: 2.5rem;
+}
+
+.hero-button {
+  color: #16131E;
+  background-color: #FFF;
+  height: 25rem;
+  width: 25rem;
+  padding: 2rem;
+  border-radius: 50%;
+  border-style: none;
+  align-self: flex-end;
+  margin-top: 5vh;
+  margin-right: 6rem;
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: -4px;
 }

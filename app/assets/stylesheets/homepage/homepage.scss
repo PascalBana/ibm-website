@@ -63,6 +63,13 @@ main {
 
 }
 
+.home-section {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
+
+//    hero section    //
 .hero {
   height: 100vh;
   background: radial-gradient(ellipse at top, #1B2735 0%, #000 100%);
@@ -92,6 +99,29 @@ main {
   margin-right: 6rem;
   font-size: 7rem;
   font-weight: 700;
+}
+
+//    mining section    //
+
+
+//    news section    //
+
+.news {
+  justify-content: center;
+  align-items: center;
+}
+
+.news-section {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5rem;
+}
+
+.news-block {
+  height: 300px;
+  width: 150px;
+  border-radius: 5%;
+  background-color: red;
 }
 
 ////////////////////////////////////////////////////

@@ -20,11 +20,9 @@ $shadows-big:    multiple-box-shadow(100);
     box-shadow: $shadows-small;
     animation: animStar 50s linear infinite;
 
-
-
   &:after{
     content: " ";
-    position: relative;
+    //position: relative;
     top: 2000px;
     width: 1px;
     height: 1px;
@@ -40,11 +38,9 @@ $shadows-big:    multiple-box-shadow(100);
     box-shadow: $shadows-medium;
     animation: animStar 100s linear infinite;
 
-
-
   &:after{
     content: " ";
-    position: relative;
+    //position: relative;
     top: 2000px;
     width: 2px;
     height: 2px;
@@ -60,16 +56,15 @@ $shadows-big:    multiple-box-shadow(100);
     box-shadow: $shadows-big;
     animation: animStar 150s linear infinite;
 
-    &:after{
-        content: " ";
-      position: relative;
-      top: 2000px;
-      width: 3px;
-      height: 3px;
-      background: transparent;
-      box-shadow: $shadows-big;
-    }
-
+  &:after{
+    content: " ";
+    //position: relative;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+  }
 }
 
 

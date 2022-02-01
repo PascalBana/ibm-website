@@ -1,10 +1,14 @@
+.bebas-font {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+}
+
 header {
   position: fixed;
   z-index: 1000;
   width: 100%;
   top: 0;
   background-color: #16131Ef0;
-  font-family: 'Bebas Neue', verdana, sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,7 +60,7 @@ header > div {
 //                 Main Section                   //
 ////////////////////////////////////////////////////
 main {
-  font-family: "Bebas Neue", sans-serif;
+
 }
 
 .hero {
@@ -70,7 +74,7 @@ main {
   color: #FFF;
   font-weight: 700;
   font-size: 4.5rem;
-  width: 55vw;
+  width: 45vw;
   margin-top: 13vh;
   margin-left: 2.5rem;
 }
@@ -78,9 +82,9 @@ main {
 .hero-button {
   color: #16131E;
   background-color: #FFF;
-  height: 25rem;
-  width: 25rem;
-  padding: 2rem;
+  height: 20rem;
+  width: 20rem;
+  padding: 3rem;
   border-radius: 50%;
   border-style: none;
   align-self: flex-end;
@@ -95,7 +99,6 @@ main {
 ////////////////////////////////////////////////////
 
 footer {
-  font-family: 'Bebas Neue', verdana, sans-serif;
   height: 25rem;
   background-color: #0e0c13;
   position: relative;
@@ -105,6 +108,7 @@ footer {
   color: #F5F4E9;
   justify-content: center;
   align-items: center;
+  font-family: "Abel", sans-serif;
 }
 
 footer > p {
@@ -122,3 +126,7 @@ h3 {
   color: #FBA342;
   padding: 2rem;
 }
+
+////////////////////////////////////////////////////
+//                    Mcbenis                     //
+////////////////////////////////////////////////////

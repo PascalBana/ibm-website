@@ -13,7 +13,6 @@
  *= require main
  *= require homepage/homepage
  *= require homepage/background_animation
- *= require reset
  *= require_self
  */
 body {

@@ -53,7 +53,7 @@ header>div {
   transition: background-color 500ms;
   padding: 1rem;
   position: relative;
-  transition: color .5s ease-in;
+  transition: color .15s ease-in;
 
   &:hover {
     color: #FBA342;
@@ -72,7 +72,7 @@ header>div {
   }
   &:hover:after,
   &:focus:after {
-    animation: .5s forwards ani2 linear;
+    animation: .15s forwards ani2 linear;
   }
 
   @keyframes ani2{
@@ -144,7 +144,7 @@ h4 {
 
 p {
   font-family: "Abel", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 ////////////////////////////////////////////////////

@@ -1,7 +1,6 @@
 ////////////////////////////////////////////////////
 //                 Main Section                   //
 ////////////////////////////////////////////////////
-
 //    hero section    //
 .hero {
   height: 100vh;
@@ -13,24 +12,24 @@
 .hero-title {
   color: #FFF;
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 10vmin;
   width: 45vw;
   margin-top: 13vh;
-  margin-left: 2.5rem;
+  margin-left: 5vmin;
 }
 
 .hero-button {
   color: #16131E;
   background-color: #FFF;
-  height: 20rem;
-  width: 20rem;
-  padding: 3rem;
+  height: 30vmin;
+  width: 30vmin;
+  padding: 3vmin;
   border-radius: 50%;
   border-style: none;
   align-self: flex-end;
-  margin-top: 7vh;
-  margin-right: 6rem;
-  font-size: 7rem;
+  margin-top: 4vh;
+  margin-right: 10vw;
+  font-size: 11vmin;
   font-weight: 700;
 }
 
@@ -43,7 +42,7 @@
   margin-bottom: 10vh;
 }
 
-.stat-block {
+.hero-stat-block {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -51,26 +50,51 @@
   gap: 1rem;
 }
 
-.stat-block>h4 {
+.hero-stat-block > h4 {
   color: #FFF;
 }
 
-.stat-block>p {
+.hero-stat-block > p {
   color: #FBA342;
   font-weight: 700;
 }
-
 //    mining section    //
-
 .home-section {
   display: flex;
   flex-flow: column nowrap;
   position: relative;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.mining > h2 {
+  margin-top: 6rem;
+  margin-left: 4rem;
+}
 
+.description-container {
+  margin: 5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 25rem;
+}
+
+.statistic-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 1rem 5.2rem 5rem;
+}
+
+.stat-block {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
 //    news section    //
-
 .news {
   justify-content: center;
   align-items: center;

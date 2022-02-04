@@ -17,9 +17,15 @@
       </div>
       <nav class="nav-bar">
         <ul>
-          <li class="list-items"><a href="#" class="list-links">Home</a></li>
-          <li class="list-items"><a href="#" class="list-links">About Us</a></li>
-          <li class="list-items"><a href="#" class="list-links">Events</a></li>
+          <li class="list-items">
+            <%= link_to 'Home', root_path, class: 'list-links' %>
+          </li>
+          <li class="list-items">
+            <%= link_to 'About Us', homepage_about_us_path, class: 'list-links' %>
+          </li>
+          <li class="list-items">
+            <%= link_to 'Live Stations', root_path, class: 'list-links' %>
+          </li>
           <% if user_signed_in? %>
           <li class="list-items">
           <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'list-links last-list-link'%>

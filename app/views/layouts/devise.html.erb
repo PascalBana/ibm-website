@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IBM Solutions</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'devise/devise', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h2 class="logo"><strong>IBM</strong></h2>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li class="list-items">
+            <%= link_to 'Home', root_path, class: 'list-links' %>
+          </li>
+          <li class="list-items">
+            <%= link_to 'About Us', homepage_about_us_path, class: 'list-links' %>
+          </li>
+          <li class="list-items">
+            <%= link_to 'Live Stations', root_path, class: 'list-links' %>
+          </li>
+          <% if user_signed_in? %>
+          <li class="list-items">
+          <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'list-links last-list-link'%>
+          </li>
+          <% else %>
+          <li class="list-items">
+            <%= link_to 'Log In', new_user_session_path, class: 'list-links'
+            %>
+          </li>
+          <li class="list-items">
+            <%= link_to 'Register', new_user_registration_path, class: 'list-links last-list-link'
+            %>
+          </li>
+          <% end %>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="left-box">
+        <%= yield %>
+      </div>
+      <div class="right-box">
+
+      </div>
+    </main>
+  </body>
+</html>

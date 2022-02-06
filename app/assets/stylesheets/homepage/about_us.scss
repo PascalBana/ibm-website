@@ -1,0 +1,21 @@
+.about-us-main {
+  background-color: var(--background-color);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.about-us-hero-section {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-us-section {
+  margin-bottom: 3rem;
+  max-width: 60rem;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}

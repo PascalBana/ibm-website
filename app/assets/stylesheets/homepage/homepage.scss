@@ -101,6 +101,7 @@
 .news {
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .news-section {
@@ -112,6 +113,20 @@
 .news-block {
   height: 300px;
   width: 150px;
-  border-radius: 5%;
-  background-color: red;
+  border-radius: 1rem;
+  background-color: #F8F8F8;
+  border: .2rem solid;
+  border-color: var(--surface-color);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.news-image-container {
+  background-color: green;
+  height: 7rem;
+  width: auto;
+}
+
+.news-text-container {
+  height: auto;
 }

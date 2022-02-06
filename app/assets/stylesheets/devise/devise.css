@@ -31,11 +31,20 @@ main {
 
 .left-box>h2 {
  margin-bottom: auto;
-margin-top: 1rem;
+ margin-top: 1rem;
 }
 
 .devise-form {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
+  margin-bottom: auto;
+}
+
+.devise-log-in-link {
+
+}
+
+.devise-sign-up-link {
+
 }

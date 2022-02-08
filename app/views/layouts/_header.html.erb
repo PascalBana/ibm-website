@@ -1,0 +1,32 @@
+<header>
+  <div>
+    <h2 class="logo"><strong>IBM</strong></h2>
+  </div>
+  <nav class="nav-bar">
+    <ul>
+      <li class="list-items">
+        <%= link_to 'Home', root_path, class: 'list-links' %>
+      </li>
+      <li class="list-items">
+        <%= link_to 'About Us', homepage_about_us_path, class: 'list-links' %>
+      </li>
+      <li class="list-items">
+        <%= link_to 'Live Stations', root_path, class: 'list-links' %>
+      </li>
+      <% if user_signed_in? %>
+      <li class="list-items">
+      <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'list-links last-list-link'%>
+      </li>
+      <% else %>
+      <li class="list-items">
+        <%= link_to 'Log In', new_user_session_path, class: 'list-links'
+        %>
+      </li>
+      <li class="list-items">
+        <%= link_to 'Register', new_user_registration_path, class: 'list-links last-list-link'
+        %>
+      </li>
+      <% end %>
+    </ul>
+  </nav>
+</header>

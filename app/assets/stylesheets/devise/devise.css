@@ -3,11 +3,27 @@
  *= require_self
  */
 body {
-  background-color: var(--background-color);
+  background-color: #FAFAFF;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.background-image {
+  background-image: url(Blue_Elegant_Astronout.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  filter: blur(0.8rem);
+  -webkit-filter: blur(0.8rem);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: -1;
 }
 
 main {
@@ -18,7 +34,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
-  border-radius: .5rem;
+  border-radius: .2rem;
+  box-shadow: 0px 0px 3px 0px #000;
 }
 
 .left-box {
@@ -39,6 +56,10 @@ main {
   flex-flow: column nowrap;
   gap: 1rem;
   margin-bottom: auto;
+}
+
+input[type=submit] {
+  background-color: red;
 }
 
 .devise-log-in-link {

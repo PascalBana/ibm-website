@@ -28,27 +28,29 @@ body {
 
 main {
   display: flex;
-  width: 50rem;
-  height: 25rem;
+  width: 25rem;
+  height: 32rem;
   background: #FFF;
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
-  border-radius: .2rem;
+  border-radius: 1rem;
   box-shadow: 0px 0px 3px 0px #000;
+  color: #373737;
 }
 
-.left-box {
+.main-box {
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
+  width: 70%;
   justify-content: center;
   align-items: center;
 }
 
-.left-box>h2 {
+.main-box>h2 {
  margin-bottom: auto;
- margin-top: 1rem;
+ margin-top: 2rem;
 }
 
 .devise-form {
@@ -56,10 +58,28 @@ main {
   flex-flow: column nowrap;
   gap: 1rem;
   margin-bottom: auto;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+input[type=email],
+input[type=password],
+input[type=password_confirmation],
+input[type=current_password] {
+  height: 1.5rem;
+  border: none;
+  border-bottom: 1px solid #676767;
 }
 
 input[type=submit] {
-  background-color: red;
+  height: 2rem;
+  background-color: #222;
+  border-style: none;
+  border-radius: 2px;
+  color: #FFF;
 }
 
 .devise-log-in-link {

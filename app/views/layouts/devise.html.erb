@@ -6,7 +6,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'devise/devise', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -43,13 +43,13 @@
         </ul>
       </nav>
     </header>
-    <%= yield %>
-    <footer>
-      <h3 class="bebas-font"><strong>CONTACT INFORMATION</strong></h3>
-      <p>Email: ibmsolutions@gmail.com</p>
-      <p>Phone number: +1 (734) 420 8008</p>
-      <p>Other means of contact: lasers</p>
-      <a class="contact-us-link bebas-font" href="#">CONTACT US</a>
-    </footer>
+    <main>
+      <div class="left-box">
+        <%= yield %>
+      </div>
+      <div class="right-box">
+
+      </div>
+    </main>
   </body>
 </html>

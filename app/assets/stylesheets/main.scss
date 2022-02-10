@@ -3,6 +3,20 @@
  *= require fonts
  *= require_self
 */
+
+:root {
+  font-size: 16px;
+  --primary-color: #FFF;
+  --primary-variant-color: #F5F4E9;
+  --secondary-color: #FBA342;
+  --secondary-variant-color: #BF7434;
+  --background-color: #1B2735;
+  --surface-color: #16131E;
+  --error-color: #A72536;
+  --on-primary-color: #16131E;
+  --on-secondary-color: #FFF;
+  --on-surface-color: #F5F4E9;
+}
 .bebas-font {
   font-family: "Bebas Neue", cursive;
   letter-spacing: 2px;
@@ -46,7 +60,7 @@ header>div {
 }
 
 .list-items {
-  color: #F5F4E9;
+  color: var(--on-surface-color);
   font-size: 1.5rem;
   font-weight: 700;
   transition: color 500ms;
@@ -157,7 +171,7 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   gap: 3rem;
-  color: #F5F4E9;
+  color: var(--on-surface-color);
   justify-content: center;
   align-items: center;
   font-family: "Abel", sans-serif;
@@ -175,6 +189,6 @@ h3 {
 .contact-us-link {
   font-size: 18px;
   font-weight: 700;
-  color: #FBA342;
+  color: var(--secondary-color);
   padding: 2rem;
 }

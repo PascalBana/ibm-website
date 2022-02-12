@@ -1,3 +1,3 @@
 class MatType < ApplicationRecord
-    belongs_to :station_type
+    has_many :station_types
 end

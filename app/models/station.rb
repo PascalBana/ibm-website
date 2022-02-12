@@ -1,4 +1,4 @@
 class Station < ApplicationRecord
   belongs_to :user
-  has_one :station_type
+  belongs_to :station_type
 end

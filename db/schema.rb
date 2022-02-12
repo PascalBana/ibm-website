@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_10_195931) do
+ActiveRecord::Schema.define(version: 2022_02_11_224247) do
 
   create_table "mat_types", force: :cascade do |t|
     t.string "name"
@@ -32,8 +32,8 @@ ActiveRecord::Schema.define(version: 2022_02_10_195931) do
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "station_types_id", null: false
-    t.index ["station_types_id"], name: "index_stations_on_station_types_id"
+    t.integer "station_type_id", null: false
+    t.index ["station_type_id"], name: "index_stations_on_station_type_id"
     t.index ["user_id"], name: "index_stations_on_user_id"
   end
 
@@ -51,6 +51,6 @@ ActiveRecord::Schema.define(version: 2022_02_10_195931) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "stations", "station_types", column: "station_types_id"
+  add_foreign_key "stations", "station_types"
   add_foreign_key "stations", "users"
 end

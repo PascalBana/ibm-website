@@ -7,24 +7,31 @@ class StationsController < ApplicationController
 
     # GET /rentals/1 or /rentals/1.json
     def show
+      @station = Station.find(params[:id])
     end
 
     # GET /rentals/new
     def new
       @station = Station.new
+      @station_types = StationType.all.map {|x| [x.name, x.id]}
+      @user = current_user.id
     end
 
     # GET /rentals/1/edit
     def edit
+      @station = Station.find(params[:id])
+      @station_types = StationType.all.map {|x| [x.name, x.id]}
+      @user = current_user.id
     end
 
     # POST /rentals or /rentals.json
     def create
       @station = Station.new(station_params)
-
+      @station_types = StationType.all.map {|x| [x.name, x.id]}
+      @user = current_user.id
       respond_to do |format|
         if @station.save
-          format.html { redirect_to rental_url(@station), notice: "Station was successfully created." }
+          format.html { redirect_to station_url(@station), notice: "Station was successfully created." }
           format.json { render :show, status: :created, location: @station }
         else
           format.html { render :new, status: :unprocessable_entity }
@@ -35,8 +42,11 @@ class StationsController < ApplicationController
 
     # PATCH/PUT /rentals/1 or /rentals/1.json
     def update
+      @station = Station.new(station_params)
+      @station_types = StationType.all.map {|x| [x.name, x.id]}
+      @user = current_user.id
       respond_to do |format|
-        if @rental.update(rental_params)
+        if @station.update(station_params)
           format.html { redirect_to station_url(@station), notice: "Station was successfully updated." }
           format.json { render :show, status: :ok, location: @station}
         else

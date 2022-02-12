@@ -1,4 +1,4 @@
 class StationType < ApplicationRecord
-  belongs_to :station
-  has_one :mat_type
+  has_many :stations
+  belongs_to :mat_type
 end

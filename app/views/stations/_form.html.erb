@@ -1,10 +1,24 @@
-<%= form_with(model: station) do |form| %>
-  <% if station.errors.any? %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<%= form_with(model: @station) do |form| %>
+  <% if @station.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(station.errors.count, "error") %> prohibited this station from being saved:</h2>
 
       <ul>
-        <% station.errors.each do |error| %>
+        <% @station.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
@@ -17,13 +31,12 @@
   </div>
 
   <div class="field">
-    <%= form.label :user_id %>
-    <%= form.hidden_field :user_id %>
+    <%= form.hidden_field :user_id, :value => @user %>
   </div>
 
   <div class="field">
-    <%= form.label :station_id %>
-    <%= form.hidden_field :station_id %>
+   <%= form.label :station_type_id %>
+   <%= form.select(:station_type_id, @station_types) %>
   </div>
 
   <div class="actions">

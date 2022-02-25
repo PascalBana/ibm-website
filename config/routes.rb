@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   get 'homepage/index'
   get 'homepage/about_us'
+
+  resources :stations
 end
